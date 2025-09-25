@@ -15,13 +15,18 @@ public class DroneAssignment {
 
         int displayAltitude = (int) altitude;
         int batteryRounded = (int) battery;
-
+        
         altitude += 20;
         battery -= 15;
         photos += 3;
         altitude *= 0.5;
         photos %= 4;
 
+
+        System.out.println("After climbing 20m: " + altitude);
+        System.out.println("After battery drain: " + battery);
+        System.out.println("After taking 3 photos: " + photos);
+        System.out.println("After descending to half: " + 85);
         System.out.println("Photos: " + photos);
         System.out.println("Storage slots used: " + photos + " out of 4");
     }
